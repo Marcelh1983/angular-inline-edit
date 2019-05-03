@@ -1,11 +1,17 @@
 {
+    "$schema": "./node_modules/ng-packagr/package.schema.json",
     "name": "ngx-edit-inline",
-    "version": "0.1.0",
+    "version": "0.1.2",
     "description": "Super simple inline edit textbox.",
     "main": "index.js",
+    "ngPackage": {
+        "lib": {
+          "entryFile": "src/index.ts"
+        }
+    },
     "scripts": {
-        "build": "gulp clean && gulp compile && gulp copy",
-        "publish": "npm run build && gulp copy && gulp publish"
+        "build": "ng-packagr -p package.json",
+        "publish": "ng-packagr -p package.json && npm publish ./dist"
     },
     "repository": {
         "type": "git",
@@ -21,9 +27,6 @@
         "url": "https://github.com/Marcelh1983/angular-inline-edit/issues"
     },
     "homepage": "https://github.com/Marcelh1983/angular-inline-edit",
-    "dependencies": {
-        "@angular/forms": "^7.2.14"
-    },
     "devDependencies": {
         "@angular/common": "^7.0.0",
         "@angular/compiler": "^7.0.0",
@@ -34,20 +37,16 @@
         "@angular/router": "^7.0.0",
         "codelyzer": "~5.0.1",
         "core-js": "^2.6.5",
-        "del": "^4.1.1",
-        "gulp": "^4.0.1",
-        "gulp-bump": "^3.1.0",
-        "gulp-typescript": "^5.0.1",
-        "merge2": "^1.2.3",
+        "ng-packagr": "^5.1.0",
         "rxjs": "^6.3.0",
         "tslint": "^5.16.0",
-        "typedoc": "^0.14.2",
         "typescript": "3.1.6",
         "zone.js": "^0.8.26"
     },
     "peerDependencies": {
         "@angular/common": "^7.0.0",
         "@angular/core": "^7.0.0",
+        "@angular/forms": "^7.0.0",
         "@angular/platform-browser": "^7.0.0",
         "@angular/router": "^7.0.0",
         "zone.js": "^0.8.29"
