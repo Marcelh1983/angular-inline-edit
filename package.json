@@ -1,5 +1,5 @@
 {
-    "name": "angular-inline-edit",
+    "name": "ngx-edit-inline",
     "version": "0.1.0",
     "description": "Super simple inline edit textbox.",
     "main": "index.js",
