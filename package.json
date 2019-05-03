@@ -35,7 +35,7 @@
         "codelyzer": "~5.0.1",
         "core-js": "^2.6.5",
         "del": "^4.1.1",
-        "gulp": "^3.9.0",
+        "gulp": "^4.0.1",
         "gulp-bump": "^3.1.0",
         "gulp-typescript": "^5.0.1",
         "merge2": "^1.2.3",
