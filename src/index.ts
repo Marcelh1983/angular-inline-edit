@@ -1,2 +1,2 @@
-export { EditInputModule } from './edit-input.module';
-export { EditInputComponent } from './edit-input.component';
+export { NgxEditInlineModule } from './edit-inline.module';
+export { NgxEditInlineComponent } from './edit-inline.component';

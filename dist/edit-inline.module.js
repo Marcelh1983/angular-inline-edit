@@ -8,17 +8,18 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { AutofocusDirective } from './autofocus.directive';
-import { EditInputComponent } from './edit-input.component';
-var EditInputModule = /** @class */ (function () {
-    function EditInputModule() {
+import { NgxEditInlineComponent } from './edit-inline.component';
+var NgxEditInlineModule = /** @class */ (function () {
+    function NgxEditInlineModule() {
     }
-    EditInputModule = __decorate([
+    NgxEditInlineModule = __decorate([
         NgModule({
             imports: [BrowserModule, FormsModule],
-            declarations: [EditInputComponent, AutofocusDirective]
+            declarations: [NgxEditInlineComponent, AutofocusDirective],
+            exports: [NgxEditInlineComponent, AutofocusDirective]
         })
-    ], EditInputModule);
-    return EditInputModule;
+    ], NgxEditInlineModule);
+    return NgxEditInlineModule;
 }());
-export { EditInputModule };
-//# sourceMappingURL=edit-input.module.js.map
+export { NgxEditInlineModule };
+//# sourceMappingURL=edit-inline.module.js.map

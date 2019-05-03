@@ -8,37 +8,37 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 import { Component, EventEmitter, Input, Output } from '@angular/core';
-var EditInputComponent = /** @class */ (function () {
-    function EditInputComponent() {
+var NgxEditInlineComponent = /** @class */ (function () {
+    function NgxEditInlineComponent() {
         this.type = 'text';
         this.onValueChanged = new EventEmitter();
         this.editMode = false;
     }
-    EditInputComponent.prototype.ngOnInit = function () { };
-    EditInputComponent.prototype.onFocusOut = function () {
+    NgxEditInlineComponent.prototype.ngOnInit = function () { };
+    NgxEditInlineComponent.prototype.onFocusOut = function () {
         this.onValueChanged.emit(this.value);
     };
     __decorate([
         Input(),
         __metadata("design:type", Object)
-    ], EditInputComponent.prototype, "type", void 0);
+    ], NgxEditInlineComponent.prototype, "type", void 0);
     __decorate([
         Input(),
         __metadata("design:type", Object)
-    ], EditInputComponent.prototype, "value", void 0);
+    ], NgxEditInlineComponent.prototype, "value", void 0);
     __decorate([
         Output(),
         __metadata("design:type", EventEmitter)
-    ], EditInputComponent.prototype, "onValueChanged", void 0);
-    EditInputComponent = __decorate([
+    ], NgxEditInlineComponent.prototype, "onValueChanged", void 0);
+    NgxEditInlineComponent = __decorate([
         Component({
-            selector: 'edit-input',
-            templateUrl: './edit-input.component.html',
-            styleUrls: ['./edit-input.component.css'],
+            selector: 'ngx-edit-inline',
+            templateUrl: './edit-inline.component.html',
+            styleUrls: ['./edit-inline.component.css'],
         }),
         __metadata("design:paramtypes", [])
-    ], EditInputComponent);
-    return EditInputComponent;
+    ], NgxEditInlineComponent);
+    return NgxEditInlineComponent;
 }());
-export { EditInputComponent };
-//# sourceMappingURL=edit-input.component.js.map
+export { NgxEditInlineComponent };
+//# sourceMappingURL=edit-inline.component.js.map

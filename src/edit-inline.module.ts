@@ -2,11 +2,10 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { AutofocusDirective } from './autofocus.directive';
-import { EditInputComponent } from './edit-input.component';
-
+import { NgxEditInlineComponent } from './edit-inline.component';
 @NgModule({
   imports:      [ BrowserModule, FormsModule],
-  declarations: [ EditInputComponent, AutofocusDirective ],
-  exports: [ EditInputComponent, AutofocusDirective ]
+  declarations: [ NgxEditInlineComponent, AutofocusDirective ],
+  exports: [ NgxEditInlineComponent, AutofocusDirective ]
 })
-export class NgxEditInputModule { }
+export class NgxEditInlineModule { }

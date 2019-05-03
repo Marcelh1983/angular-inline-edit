@@ -1,5 +1,5 @@
 import { EventEmitter, OnInit } from '@angular/core';
-export declare class EditInputComponent implements OnInit {
+export declare class NgxEditInlineComponent implements OnInit {
     type: string;
     value: string | number;
     onValueChanged: EventEmitter<number | string>;
