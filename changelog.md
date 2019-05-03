@@ -1,2 +1,3 @@
-# 0.1.0 (4/9/2019)
-* Upgraded packages to support Angular 6+
+# 0.1.0 (5/3/2019)
+Initial version
+
