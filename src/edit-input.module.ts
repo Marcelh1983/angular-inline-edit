@@ -6,6 +6,7 @@ import { EditInputComponent } from './edit-input.component';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule],
-  declarations: [ EditInputComponent, AutofocusDirective ]
+  declarations: [ EditInputComponent, AutofocusDirective ],
+  exports: [ EditInputComponent, AutofocusDirective ]
 })
-export class EditInputModule { }
+export class NgxEditInputModule { }
