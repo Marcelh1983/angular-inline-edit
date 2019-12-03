@@ -2,13 +2,15 @@
   *ngIf="!editMode"
   (click)="editMode=true"
   class="cell"
->{{ value }}</div>
+  [class.placeholder]="!value"
+><span>{{ value || placeholder }}</span></div>
 <input
   *ngIf="editMode"
   (focusout)="onFocusOut()"
   (keydown.enter)="$event.target.blur()"
   [(ngModel)]="value"
   class="cellInput"
+  [placeholder]="placeholder"
   autofocus
   [type]="type"
   (keydown.enter)="$event.target.blur()"

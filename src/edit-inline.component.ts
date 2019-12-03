@@ -8,6 +8,7 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 export class NgxEditInlineComponent implements OnInit {
   @Input() type = 'text';
   @Input() value: string|number;
+  @Input() placeholder: string;
   @Output() onValueChanged: EventEmitter<number|string> = new EventEmitter<number|string>();
   editMode = false;
   constructor() {}
