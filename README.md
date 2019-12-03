@@ -8,7 +8,7 @@ Copied from <a href="https://stackblitz.com/edit/angular-inline-edit?file=src%2F
 ## Installation
 
 ```sh
-npm install ngx-inline-edit --save
+npm install ngx-edit-inline --save
 ```
 
 ## Usage
