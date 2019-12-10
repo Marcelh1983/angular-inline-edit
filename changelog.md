@@ -1,7 +1,11 @@
+#1.0.0 (12/10/2019)
+added demo application to test
+added option to emit changes while editing
+changed styles so they can be overriden
+
 #0.2.0 (12/3/2019)
 removed msal package from dependencies (copy paste left over)
 upgraded packages
-
 
 #0.1.6 (5/3/2019)
 import commonModule instead of browserModule

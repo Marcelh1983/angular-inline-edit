@@ -1,0 +1,32 @@
+<div class="container">
+    <div class="row">
+        <h5>Simple example</h5>
+        <ngx-edit-inline
+            [placeholder]="'Here a name'"
+            [value]="myname"
+            style="font-size: 2rem;"
+            (onValueChanged)="updateMyName($event)"
+        ></ngx-edit-inline>
+    </div>
+    <div class="row">
+        <h5>List example</h5>
+        <table class="table table-borderless">
+            <thead>
+                <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let name of names; let i = index; trackBy: trackById">
+                    <td>
+                        <ngx-edit-inline
+                            [value]="name.name"
+                            (onValueChanged)="updateListName(name.id, $event)"
+                        ></ngx-edit-inline>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

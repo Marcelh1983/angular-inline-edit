@@ -1,0 +1,15 @@
+<span
+  *ngIf="!editMode"
+  [class.placeholder]="!value"
+>{{ value || placeholder }}</span>
+<input
+  *ngIf="editMode"
+  [type]="type"
+  #inputValue
+  [formControl]="inputTextControl"
+  (keydown.enter)="$event.target.blur()"
+  [value]="value"
+  [placeholder]="placeholder"
+  autofocus
+  (focusout)="onFocusOut(inputValue.value)"
+>

@@ -1,25 +1,22 @@
 {
-  "extends": "./tsconfig.base.json",
+  "compileOnSave": false,
   "compilerOptions": {
+    "baseUrl": "./",
+    "outDir": "./dist/out-tsc",
+    "sourceMap": true,
+    "declaration": false,
+    "module": "esnext",
     "moduleResolution": "node",
-    "module": "commonjs",
-    "target": "es5",
-    "lib": [ "es2015", "dom", "es2015.promise" , "es2017"],
-    "outDir": "lib-commonjs",
-    "baseUrl": "src",
-    "paths": {
-    }
-  },
-  "files": [
-    "./src/index.ts"
-  ],
-  "types": [
-    "jasmine",
-    "node",
-    "jasmine-ajax"
-  ],
-   "typeRoots": [
-      "../node_modules/@types"
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "lib": [
+      "es2018",
+      "dom"
     ]
-
+  }
 }
