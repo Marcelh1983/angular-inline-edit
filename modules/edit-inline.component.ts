@@ -1,7 +1,7 @@
-import { Component, EventEmitter, Input, OnInit, Output, OnDestroy, HostListener } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output, OnDestroy, HostListener, ViewChild, ElementRef } from '@angular/core';
 import { FormControl } from '@angular/forms';
-import { debounceTime } from 'rxjs/operators';
-import { Subscription } from 'rxjs';
+import { debounceTime, take } from 'rxjs/operators';
+import { Subscription, timer } from 'rxjs';
 
 @Component({
   selector: 'ngx-edit-inline',
@@ -11,6 +11,7 @@ import { Subscription } from 'rxjs';
 export class NgxEditInlineComponent implements OnInit, OnDestroy {
   @Input() type = 'text';
   @Input() value: string | number;
+  @Input() selectText = true;
   @Input() saveOption: 'onedit'|'focusout' = 'onedit';
   @Input() debounceTime = 500;
   @Input() placeholder: string;
@@ -24,6 +25,7 @@ export class NgxEditInlineComponent implements OnInit, OnDestroy {
   @HostListener('click', ['$event.target']) onClick(_) {
     this.editMode = true;
   }
+
   constructor() { }
 
   ngOnInit() {

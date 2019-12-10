@@ -22,6 +22,7 @@
                     <td>
                         <ngx-edit-inline
                             [value]="name.name"
+                            [selectText]="true"
                             (onValueChanged)="updateListName(name.id, $event)"
                         ></ngx-edit-inline>
                     </td>

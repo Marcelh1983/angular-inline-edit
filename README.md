@@ -32,6 +32,7 @@ npm install ngx-edit-inline --save
   [type]="'text'"
   [saveOption]="'onedit'"
   [debounceTime]="500"
+  [selectText]="true"
   [placeholder]="'enter name'"
   (onValueChanged)="changedValue($event)"></ngx-edit-inline>
 ```
@@ -42,4 +43,5 @@ npm install ngx-edit-inline --save
 - value: initial value
 - saveOption: onedit: emits changes while editing using debounceTime, focusout: only emits when the focus is set to another element
 - placeholder: text shown when 'value' is empty
+- selectText: if true it selects the current text onfocus
 - onValueChanged(): emits new values

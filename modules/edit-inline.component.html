@@ -11,5 +11,6 @@
   [value]="value"
   [placeholder]="placeholder"
   autofocus
+  (focus)="selectText ? $event.target.select(): null"
   (focusout)="onFocusOut(inputValue.value)"
 >

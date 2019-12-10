@@ -1,3 +1,6 @@
+#1.0.1 (12/10/2019)
+added: 'selectText' option to select current text onfocus
+
 #1.0.0 (12/10/2019)
 added demo application to test
 added option to emit changes while editing
