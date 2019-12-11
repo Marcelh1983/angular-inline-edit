@@ -1,7 +1,7 @@
 {
     "$schema": "./node_modules/ng-packagr/package.schema.json",
     "name": "ngx-edit-inline",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "Super simple inline edit textbox.",
     "entryFile": "modules/index.ts",
     "ngPackage": {
@@ -20,7 +20,8 @@
     },
     "keywords": [
         "Angular",
-        "Word"
+        "Inline edit",
+        "Inplace edit"
     ],
     "author": "Marcel Hoekstra; Patrick de Klein",
     "license": "MIT",
