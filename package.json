@@ -1,57 +1,53 @@
 {
-    "$schema": "./node_modules/ng-packagr/package.schema.json",
-    "name": "ngx-edit-inline",
-    "version": "1.0.2",
-    "description": "Super simple inline edit textbox.",
-    "entryFile": "modules/index.ts",
-    "ngPackage": {
-        "lib": {
-            "entryFile": "modules/index.ts"
-        }
-    },
-    "scripts": {
-        "build": "ng-packagr -p package.json",
-        "publish": "ng-packagr -p package.json && npm publish ./dist",
-        "start": "ng serve --port 4222"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/Marcelh1983/angular-inline-edit.git"
-    },
-    "keywords": [
-        "Angular",
-        "Inline edit",
-        "Inplace edit"
-    ],
-    "author": "Marcel Hoekstra; Patrick de Klein",
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/Marcelh1983/angular-inline-edit/issues"
-    },
-    "homepage": "https://github.com/Marcelh1983/angular-inline-edit",
-    "devDependencies": {
-        "@angular-devkit/build-angular": "~0.900.0-rc.5",
-        "@angular/cli": "~9.0.0-rc.5",
-        "@angular/common": "~9.0.0-rc.5",
-        "@angular/compiler": "~9.0.0-rc.5",
-        "@angular/forms": "~9.0.0-rc.5",
-        "@angular/compiler-cli": "~9.0.0-rc.5",
-        "@angular/core": "~9.0.0-rc.5",
-        "@angular/platform-browser": "~9.0.0-rc.5",
-        "@angular/platform-browser-dynamic": "~9.0.0-rc.5",
-        "@angular/router": "~9.0.0-rc.5",
-        "bootstrap": "4.3.1",
-        "codelyzer": "~5.2.0",
-        "core-js": "^3.4.8",
-        "ng-packagr": "^5.7.1",
-        "rxjs": "^6.5.3",
-        "tslint": "^5.20.1",
-        "typescript": "3.6.4",
-        "zone.js": "^0.10.2"
-    },
-    "peerDependencies": {
-        "@angular/common": ">= 6.0.0",
-        "@angular/core": ">= 6.0.0",
-        "@angular/forms": ">= 6.0.0"
+  "$schema": "./node_modules/ng-packagr/package.schema.json",
+  "name": "ngx-edit-inline",
+  "version": "1.1.0",
+  "description": "Super simple inline edit textbox.",
+  "entryFile": "modules/index.ts",
+  "ngPackage": {
+    "lib": {
+      "entryFile": "modules/index.ts"
     }
+  },
+  "scripts": {
+    "build": "ng-packagr -p package.json",
+    "publish": "ng-packagr -p package.json && npm publish ./dist",
+    "start": "ng serve --port 4222"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Marcelh1983/angular-inline-edit.git"
+  },
+  "keywords": [
+    "Angular",
+    "Inline edit",
+    "Inplace edit"
+  ],
+  "author": "Marcel Hoekstra; Patrick de Klein",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Marcelh1983/angular-inline-edit/issues"
+  },
+  "homepage": "https://github.com/Marcelh1983/angular-inline-edit",
+  "devDependencies": {
+    "@angular-devkit/build-angular": "~0.1000.4",
+    "@angular/cli": "~10.0.4",
+    "@angular/common": "~10.0.5",
+    "@angular/compiler": "~10.0.5",
+    "@angular/forms": "~10.0.5",
+    "@angular/compiler-cli": "~10.0.5",
+    "@angular/core": "~10.0.5",
+    "@angular/platform-browser": "~10.0.5",
+    "@angular/platform-browser-dynamic": "~10.0.5",
+    "@angular/router": "~10.0.5",
+    "bootstrap": "4.5.0",
+    "codelyzer": "^6.0.0",
+    "core-js": "^3.6.5",
+    "ng-packagr": "^10.0.0",
+    "rxjs": "^6.6.0",
+    "tslint": "~6.1.0",
+    "typescript": "3.9.7",
+    "zone.js": "^0.10.3"
+  },
+  "peerDependencies": {}
 }
