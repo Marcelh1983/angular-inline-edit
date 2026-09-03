@@ -1,0 +1,12 @@
+# Build output
+/dist
+/out-tsc
+/.angular
+
+# Dependencies
+/node_modules
+
+# Local tooling / editor scratch directories
+/.opencode
+/.history
+package-lock.json

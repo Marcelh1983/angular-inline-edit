@@ -1,0 +1,31 @@
+{
+  "name": "ngx-edit-inline",
+  "version": "2.0.0",
+  "description": "Super simple, zoneless-ready inline edit component for Angular.",
+  "keywords": [
+    "angular",
+    "inline-edit",
+    "inplace-edit",
+    "editable",
+    "signals",
+    "standalone"
+  ],
+  "author": "Marcel Hoekstra; Patrick de Klein",
+  "license": "MIT",
+  "homepage": "https://github.com/Marcelh1983/angular-inline-edit",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Marcelh1983/angular-inline-edit.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Marcelh1983/angular-inline-edit/issues"
+  },
+  "peerDependencies": {
+    "@angular/common": "^20.0.0 || ^21.0.0 || ^22.0.0",
+    "@angular/core": "^20.0.0 || ^21.0.0 || ^22.0.0"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "sideEffects": false
+}

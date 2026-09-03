@@ -1,0 +1,18 @@
+@if (editMode()) {
+  <input
+    #inputElement
+    class="ngx-edit-inline__input"
+    [type]="type()"
+    [value]="value() ?? ''"
+    [placeholder]="placeholder()"
+    [attr.aria-label]="ariaLabel()"
+    (input)="onInput(inputElement.value)"
+    (keydown.enter)="inputElement.blur()"
+    (keydown.escape)="onEscape()"
+    (focusout)="onFocusOut(inputElement.value)"
+  />
+} @else {
+  <span class="ngx-edit-inline__text" [class.ngx-edit-inline__placeholder]="isPlaceholder()">{{
+    displayValue()
+  }}</span>
+}

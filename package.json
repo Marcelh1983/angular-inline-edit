@@ -1,53 +1,49 @@
 {
-  "$schema": "./node_modules/ng-packagr/package.schema.json",
-  "name": "ngx-edit-inline",
-  "version": "1.1.1",
-  "description": "Super simple inline edit textbox.",
-  "entryFile": "modules/index.ts",
-  "ngPackage": {
-    "lib": {
-      "entryFile": "modules/index.ts"
-    }
-  },
-  "scripts": {
-    "build": "ng-packagr -p package.json",
-    "publish": "ng-packagr -p package.json && npm publish ./dist",
-    "start": "ng serve --port 4222"
-  },
+  "name": "angular-inline-edit",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Workspace for the ngx-edit-inline Angular library and its demo application.",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Marcelh1983/angular-inline-edit.git"
   },
-  "keywords": [
-    "Angular",
-    "Inline edit",
-    "Inplace edit"
-  ],
-  "author": "Marcel Hoekstra; Patrick de Klein",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/Marcelh1983/angular-inline-edit/issues"
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve demo",
+    "build": "ng build ngx-edit-inline",
+    "build:demo": "ng build demo",
+    "watch": "ng build ngx-edit-inline --watch --configuration development",
+    "test": "ng test ngx-edit-inline",
+    "lint": "ng lint",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "release": "npm run build && npm publish ./dist/ngx-edit-inline"
   },
-  "homepage": "https://github.com/Marcelh1983/angular-inline-edit",
+  "engines": {
+    "node": "^22.22.3 || ^24.15.0 || >=26.0.0"
+  },
+  "packageManager": "npm@11.19.0",
+  "dependencies": {
+    "@angular/common": "^22.1.0",
+    "@angular/compiler": "^22.1.0",
+    "@angular/core": "^22.1.0",
+    "@angular/platform-browser": "^22.1.0",
+    "rxjs": "~7.8.0",
+    "tslib": "^2.3.0"
+  },
   "devDependencies": {
-    "@angular-devkit/build-angular": "~13.3.10",
-    "@angular/cli": "~13.3.10",
-    "@angular/common": "~13.3.12",
-    "@angular/compiler": "~13.3.12",
-    "@angular/forms": "~13.3.12",
-    "@angular/compiler-cli": "~13.3.12",
-    "@angular/core": "~13.3.12",
-    "@angular/platform-browser": "~13.3.12",
-    "@angular/platform-browser-dynamic": "~13.3.12",
-    "@angular/router": "~13.3.12",
-    "bootstrap": "4.5.2",
-    "codelyzer": "^6.0.0",
-    "core-js": "^3.6.5",
-    "ng-packagr": "^13.3.1",
-    "rxjs": "^6.6.3",
-    "tslint": "~6.1.3",
-    "typescript": "4.6.4",
-    "zone.js": "^0.11.8"
-  },
-  "peerDependencies": {}
+    "@angular/build": "^22.1.7",
+    "@angular/cli": "^22.1.7",
+    "@angular/compiler-cli": "^22.1.0",
+    "@eslint/js": "^10.0.1",
+    "angular-eslint": "^22.2.0",
+    "eslint": "^10.9.1",
+    "jsdom": "^28.0.0",
+    "ng-packagr": "^22.1.0",
+    "prettier": "^3.8.1",
+    "typescript": "~6.0.2",
+    "typescript-eslint": "^8.69.0",
+    "vitest": "^4.0.8"
+  }
 }

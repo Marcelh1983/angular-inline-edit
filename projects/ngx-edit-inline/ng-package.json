@@ -1,0 +1,7 @@
+{
+  "$schema": "../../node_modules/ng-packagr/ng-package.schema.json",
+  "dest": "../../dist/ngx-edit-inline",
+  "lib": {
+    "entryFile": "src/public-api.ts"
+  }
+}

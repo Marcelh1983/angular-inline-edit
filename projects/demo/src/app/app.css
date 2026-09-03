@@ -1,0 +1,54 @@
+main {
+  max-width: 44rem;
+  margin: 0 auto;
+  padding: 2rem 1rem 4rem;
+}
+
+h1 {
+  margin-bottom: 0.25rem;
+}
+
+.lead {
+  margin-top: 0;
+  color: #555;
+}
+
+section {
+  margin-top: 2.5rem;
+}
+
+h2 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+.field {
+  border: 1px solid #e2e2e2;
+  border-radius: 6px;
+}
+
+.muted {
+  color: #666;
+  font-size: 0.875rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  text-align: left;
+  border-bottom: 1px solid #eee;
+  padding: 0;
+}
+
+th {
+  padding: 0.5rem;
+  color: #666;
+  font-weight: 600;
+}

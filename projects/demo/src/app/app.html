@@ -1,0 +1,67 @@
+<main>
+  <h1>ngx-edit-inline</h1>
+  <p class="lead">Click (or focus and press Enter) on any value below to edit it in place.</p>
+
+  <section>
+    <h2>Two-way binding</h2>
+    <div class="field">
+      <ngx-edit-inline
+        style="font-size: 1.5rem"
+        placeholder="Type your name"
+        ariaLabel="Your name"
+        [(value)]="myName"
+        (valueChanged)="onNameChanged($event)"
+      />
+    </div>
+    <p class="muted">
+      Signal value: <code>{{ myName() || '(empty)' }}</code> · {{ lastEvent() }}
+    </p>
+  </section>
+
+  <section>
+    <h2>Save on focus out</h2>
+    <div class="field">
+      <ngx-edit-inline placeholder="Only emits when you leave the field" saveOption="focusout" />
+    </div>
+  </section>
+
+  <section>
+    <h2>Disabled</h2>
+    <div class="field">
+      <ngx-edit-inline value="Not editable" disabled />
+    </div>
+  </section>
+
+  <section>
+    <h2>Table example</h2>
+    <table>
+      <thead>
+        <tr>
+          <th scope="col">Name</th>
+          <th scope="col">Age</th>
+        </tr>
+      </thead>
+      <tbody>
+        @for (person of people(); track person.id) {
+          <tr>
+            <td>
+              <ngx-edit-inline
+                [value]="person.name"
+                [ariaLabel]="'Name of ' + person.name"
+                (valueChanged)="renamePerson(person.id, $event)"
+              />
+            </td>
+            <td>
+              <ngx-edit-inline
+                type="number"
+                [value]="person.age"
+                [ariaLabel]="'Age of ' + person.name"
+                (valueChanged)="setPersonAge(person.id, $event)"
+              />
+            </td>
+          </tr>
+        }
+      </tbody>
+    </table>
+  </section>
+</main>

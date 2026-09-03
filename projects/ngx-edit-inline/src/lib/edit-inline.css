@@ -1,0 +1,41 @@
+:host {
+  display: block;
+  box-sizing: border-box;
+  padding: var(--ngx-edit-inline-padding, 0.5rem);
+  width: 100%;
+  min-height: 1lh;
+  border-radius: var(--ngx-edit-inline-radius, 2px);
+  font: inherit;
+  color: inherit;
+}
+
+:host(:hover),
+:host(:focus-visible) {
+  cursor: pointer;
+  outline: var(--ngx-edit-inline-outline, 2px dashed #c8c8c8);
+}
+
+:host(.ngx-edit-inline--disabled) {
+  cursor: default;
+  opacity: 0.6;
+}
+
+:host(.ngx-edit-inline--disabled:hover) {
+  outline: none;
+}
+
+.ngx-edit-inline__input {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  font: inherit;
+  color: inherit;
+}
+
+.ngx-edit-inline__placeholder {
+  color: var(--ngx-edit-inline-placeholder-color, grey);
+}
