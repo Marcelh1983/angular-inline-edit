@@ -18,7 +18,12 @@ A tiny, dependency-free inline-edit component for Angular. Click a value, edit i
 npm install ngx-edit-inline
 ```
 
-Requires Angular 20 or newer. For Angular 13–19, use `ngx-edit-inline@1`.
+Requires Angular 20 or newer. The major version tracks the Angular major this package is
+built against, so install `ngx-edit-inline@22` for Angular 20–22.
+
+Older releases: `ngx-edit-inline@15` (Angular 15) and `ngx-edit-inline@1` (Angular 12 and
+earlier). Neither declared an Angular `peerDependencies` range, so npm will not warn you
+about a mismatch on those versions.
 
 ## Usage
 
@@ -88,7 +93,7 @@ ngx-edit-inline {
 
 Font and colour are inherited from the surrounding element, so the component blends into any layout.
 
-## Migrating from v1
+## Migrating from 15.x or 1.x
 
 - `NgxEditInlineModule` is gone — import the standalone `NgxEditInline` component instead.
 - `NgxEditInlineComponent` was renamed to `NgxEditInline`.
@@ -96,6 +101,7 @@ Font and colour are inherited from the surrounding element, so the component ble
 - `value` is now a two-way bindable model input.
 - `AutofocusDirective` is no longer exported; focus handling is built into the component.
 - Angular 20+ is required.
+- The version jumped from 15.0.0 to 22.0.0 to match the Angular major; no 2.x–21.x exists.
 
 ## Development
 

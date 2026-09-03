@@ -1,6 +1,12 @@
-# 2.0.0
+# 22.0.0 (2026-09-03)
 
-Complete rewrite on a modern Angular workspace. Breaking changes:
+Complete rewrite on a modern Angular workspace.
+
+From this release the major version tracks the Angular major the package is built
+against, continuing the scheme started with 15.0.0 (Angular 15). The previous
+release on npm was 15.0.0; there is no 2.x-21.x.
+
+Breaking changes:
 
 - Requires Angular 20+ (built and tested against Angular 22).
 - `NgxEditInlineModule` removed; `NgxEditInline` is now a standalone component.
@@ -19,6 +25,8 @@ New:
 - `OnPush` change detection, signal-based, zoneless compatible — dropped the `@angular/forms` dependency.
 - Unit tests, ESLint (TypeScript + template a11y rules) and a CI workflow.
 - Demo moved from Firebase Hosting to StackBlitz.
+- `peerDependencies` now declare the supported Angular range; 1.x and 15.0.0 shipped with none.
+  Only `@angular/core` is required — the component uses built-in control flow, not `CommonModule`.
 - `strict` and `strictTemplates` are enabled workspace-wide.
 
 #1.0.1 (12/10/2019)

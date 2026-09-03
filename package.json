@@ -18,7 +18,7 @@
     "lint": "ng lint",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "release": "npm run build && npm publish ./dist/ngx-edit-inline"
+    "release": "npm run build && cp README.md changelog.md dist/ngx-edit-inline/ && npm publish ./dist/ngx-edit-inline"
   },
   "engines": {
     "node": "^22.22.3 || ^24.15.0 || >=26.0.0"
